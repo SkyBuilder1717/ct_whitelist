@@ -1,4 +1,5 @@
-![Logo](https://github.com/zion8992/ct_whitelist/blob/main/logo.png)
+[Logo](https://github.com/zion8992/ct_whitelist/blob/main/logo.png)
+Logo textures by Mintest Game team
 
 # Whitelist Live Mod for Minetest
 
