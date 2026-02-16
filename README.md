@@ -1,3 +1,5 @@
+![Logo](https://github.com/zion8992/ct_whitelist/blob/main/logo.png)
+
 # Whitelist Live Mod for Minetest
 
 **Version:** 0.0.0
