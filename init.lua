@@ -64,18 +64,18 @@ core.register_chatcommand("whitelist", {
 
         if action == "add" then
             if player_name == "" then return false, S("Specify player name") end
-            if add_name(player_name) then
-                return true, S("Added @1 to ct_whitelist.", player_name)
+            if ct_whitelist.add_name(player_name) then
+                return true, S("Added @1 to @2.", player_name, ct_whitelist.file_name)
             else
-                return false, S("@1 already in ct_whitelist.", player_name)
+                return false, S("@1 already in @2.", player_name, ct_whitelist.file_name)
             end
 
         elseif action == "remove" then
             if player_name == "" then return false, S("Specify player name") end
-            if remove_name(player_name) then
-                return true, S("Removed @1 from ct_whitelist.", player_name)
+            if ct_whitelist.remove_name(player_name) then
+                return true, S("Removed @1 from @2.", player_name, ct_whitelist.file_name)
             else
-                return false, S("@1 not in ct_whitelist.", player_name)
+                return false, S("@1 not in @2.", player_name, ct_whitelist.file_name)
             end
 
         elseif action == "list" then
@@ -84,17 +84,17 @@ core.register_chatcommand("whitelist", {
 
         elseif action == "reload" then
             if not ct_whitelist.file_name then return false, S("No text file available to reload.") end
-            local ok, err = reload_from_file()
+            local ok, err = ct_whitelist.reload_from_file()
             if ok then return true, S("Reloaded from @1.", ct_whitelist.file_name) else return false, S("Reload failed: @1", tostring(err)) end
             
         elseif action == "enable" then
             ct_whitelist.enabled = true
-            save_storage()
+            ct_whitelist.save_storage()
             return true, S("Whitelist enabled.")
 
         elseif action == "disable" then
             ct_whitelist.enabled = false
-            save_storage()
+            ct_whitelist.save_storage()
             return true, S("Whitelist disabled.")
 
         elseif action == "status" then
@@ -138,7 +138,7 @@ core.register_globalstep(function(dtime)
     if not ok then mt = nil end
     if mt and ct_whitelist.file_func ~= mt then
         ct_whitelist.file_func = mt
-        local ok2, err = reload_from_file()
+        local ok2, err = ct_whitelist.reload_from_file()
         if not ok2 then core.log("warning", "["..modname.."] live reload failed: "..tostring(err)) end
     end
 end)
