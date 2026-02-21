@@ -1,0 +1,27 @@
+# textdomain: ct_whitelist
+
+# ContentDB #
+Cave Test: Whitelist=Cave Test: Белый Список
+Adds whitelist into the game=Добавляет белый список в игру
+
+# Privileges #
+Can manage the whitelist=Может управлять белым списком
+Bypass the whitelist=Может обходить белый список
+
+# Command Description #
+Manage server whitelist=Управляет белым список сервера
+
+# Command Messages #
+Specify player name=Укажите имея игрока
+Added @1 to @2.=Добавлен @1 в @2.
+@1 already in @2.=@1 уже в @2.
+Removed @1 from @2.=Удалён @1 из @2.
+@1 not in @2.=@1 не в @2.
+No text file available to reload.=Нету доступного текстового файла для перезагрузки.
+Reloaded from @1.=Перезагружен из @1.
+Reload failed: @1=Перезагрузка провалена: @1
+Whitelist enabled.=Белый список включён.
+Whitelist disabled.=Белый список выключен.
+
+# Kick Message #
+You are not whitelisted on this server.=Вы не в белом списке на этом сервере.
