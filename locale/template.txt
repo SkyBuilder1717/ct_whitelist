@@ -1,5 +1,9 @@
 # textdomain: ct_whitelist
 
+# ContentDB #
+Cave Test: Whitelist=
+Adds whitelist into the game=
+
 # Privileges #
 Can manage the whitelist=
 Bypass the whitelist=
@@ -9,10 +13,10 @@ Manage server whitelist=
 
 # Command Messages #
 Specify player name=
-Added @1 to whitelist.=
-@1 already in whitelist.=
-Removed @1 from whitelist.=
-@1 not in whitelist.=
+Added @1 to @2.=
+@1 already in @2.=
+Removed @1 from @2.=
+@1 not in @2.=
 No text file available to reload.=
 Reloaded from @1.=
 Reload failed: @1=
