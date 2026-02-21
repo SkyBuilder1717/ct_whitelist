@@ -1,0 +1,23 @@
+# textdomain: ct_whitelist
+
+# Privileges #
+Can manage the whitelist=
+Bypass the whitelist=
+
+# Command Description #
+Manage server whitelist=
+
+# Command Messages #
+Specify player name=
+Added @1 to whitelist.=
+@1 already in whitelist.=
+Removed @1 from whitelist.=
+@1 not in whitelist.=
+No text file available to reload.=
+Reloaded from @1.=
+Reload failed: @1=
+Whitelist enabled.=
+Whitelist disabled.=
+
+# Kick Message #
+You are not whitelisted on this server.=
