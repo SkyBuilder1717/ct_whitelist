@@ -1,4 +1,4 @@
-![Logo](https://github.com/zion8992/ct_whitelist/blob/main/screenshot.png)
+![Logo](https://content.luanti.org/uploads/e73a7f4555.png)
 
 *(Logo by Zion8992)*
 
