@@ -1,0 +1,7 @@
+# Note: Doesn't do anything in singleplayer
+ct_whitelist_enabled (Whitelist Enabled) bool true
+
+ct_whitelist_file_name (List File Name) string whitelist.txt
+
+# Delay between live updates (in seconds)
+ct_whitelist_delay (Delay) float 5.0 0.5 60.0
