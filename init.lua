@@ -2,7 +2,7 @@ local settings = core.settings
 
 -- global variable
 local modname = core.get_current_modname()
-whitelist = {
+ct_whitelist = {
     enabled = settings:get_bool(modname .. "_enabled", true),
     list = {},
     list_array = {},
